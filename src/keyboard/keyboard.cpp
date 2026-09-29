@@ -29,6 +29,8 @@
 #include <src/plugin/plugin.h>
 
 int main(int argc, char **argv) {
+    // Silence debug/info output; keep warnings and errors visible.
+    setenv("QT_LOGGING_RULES", "*.debug=false;*.info=false", 1);
     setenv("QT_IM_MODULE", "none", true);
     setenv("QT_WAYLAND_SHELL_INTEGRATION", "inputpanel-shell", true);
 
