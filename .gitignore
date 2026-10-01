@@ -14,3 +14,5 @@ tests/repeat-backspace/repeat-backspace
 tests/unittests/libdummy.so.1*
 tests/word-candidates/word-candidates
 build/
+*.code-workspace
+*.code-workspace.*
